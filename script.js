@@ -13,11 +13,11 @@ function computerPlay() {
 
 //execute 1 round
 function playRound(playerSelection, computerSelection) {
-    let winMessage = "You win!";
-    let loseMessage = "You lose!";
+    let winMessage = `You win! You choose ${playerSelection} and computer choose ${computerSelection}`;
+    let loseMessage = `You lose! You choose ${playerSelection} and computer choose ${computerSelection}`;
 
     if (playerSelection==computerSelection){
-        return "It's a tie!";
+        return `It's a tie with both ${playerSelection}!`;
     }
 
     else if (playerSelection=="rock"){
