@@ -65,12 +65,14 @@ function displayFunc () {
         playerScore = 0;
         computerScore = 0;
         alert("You won with 5 points!");
+        displayresult.textContent="Well done!";
     }
 
     if (computerScore==5){
         playerScore = 0;
         computerScore = 0;
         alert("The computer won with 5 points!")
+        displayresult.textContent="It's ok...try again next time?";
     }
 
 }
