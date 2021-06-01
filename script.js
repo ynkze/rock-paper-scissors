@@ -55,22 +55,22 @@ function playRound(playerSelection, computerSelection) {
 }
 //defining parameters
 let playerSelection = " ";
-const displayresult = document.querySelector('#result-display');
+const displayresult = document.querySelector('#result_display');
 const player_score = document.querySelector('#player_score');
 const computer_score = document.querySelector('#computer_score');
 
 //display the result and reset upon reaching 5
 function displayFunc () {
     if (playerScore==5){
-        alert("You won with 5 points!");
         playerScore = 0;
         computerScore = 0;
+        alert("You won with 5 points!");
     }
 
     if (computerScore==5){
-        alert("The computer won with 5 points!")
         playerScore = 0;
         computerScore = 0;
+        alert("The computer won with 5 points!")
     }
 
 }

@@ -1,0 +1,49 @@
+img {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+
+    transition: transform .2s;
+    transition-timing-function: ease-in-out;
+}
+
+button {
+    width: 210px;
+    height: 210px;
+    border: none;
+}
+
+#btns {
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    display:flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+#display {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    width: 40vw;
+}
+
+#player_score {
+    float: left;
+}
+
+#computer_score {
+    float: right;
+}
+
